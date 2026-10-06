@@ -1,0 +1,13 @@
+digraph{
+    subgraph cluster_mal{
+        label = "main application loop"
+
+        "getting data from" -> {"projects.apps4lab.be", "portaal.apps4lab.be"}
+        
+        -> "interface" 
+        {"intrests" "hobbies" "free time" "..."} -> "customization" -> "interface"
+
+        -> "make planner"
+        -> "export to pdf"
+    }
+}
