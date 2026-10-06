@@ -1,6 +1,8 @@
 #include <iostream>
-#include <glfw3.h>
 #include <glad/glad.h>
+#include <glfw3.h>
+
+void error_callback(int error, const char* description);
 
 int main(int, char**){
     if(!glfwInit()){
@@ -19,10 +21,14 @@ int main(int, char**){
 
     while (!glfwWindowShouldClose(window))
     {
+        int width, height;
+        glfwGetFramebufferSize(window, &width, &height);
+        const float ratio = width / (float) height;
         
-        std::cout << "window" << std::endl;
+        
 
-
+        glfwSwapBuffers(window);
+        glfwPollEvents();
     }
 
     glfwDestroyWindow(window);
