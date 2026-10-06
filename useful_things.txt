@@ -1,0 +1,21 @@
+fetch like api's and other possible useful things.
+
+notes: 
+
+leerling_id = found in localstorage
+
+base = apps4lab.be (always in front of /api)
+
+BIJB = belangrijke bijzaken i think
+
+api:
+
+lessenrooster: /api/lessenrooster/lln/p/w/name.surname (for example) apps4lab.be/api/lessenrooster/lln/1/6/lander.debusschere
+p = project (1,2,...)
+w = week (1,2,2)
+
+studiewijzer: /api/projecten/studiewijzer-preview?schooljaar=2026-2027&richting=4D&project=P1&projectweek_code=P1W6&leerling_id=xxxx
+opdrachten: /api/projecten/leerling-opdrachten?leerling_id=xxxx&project=P1&deelproject_id=2026-2027+-+4D+-+BIJB
+t-codes: api/projecten/leerling-tcodes?leerling_id=xxxx&schooljaar=2026-2027&project=P1
+alle vaken: /api/projecten/leerling-deelprojecten?leerling_id=xxxx&schooljaar=2026-2027&project=P1
+alle opdrachten: /api/projecten/leerling-opdrachten?leerling_id=xxxx&project=P1&deelproject_id=2026-2027+-+4D+-+BIJB
