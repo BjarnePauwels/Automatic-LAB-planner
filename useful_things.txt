@@ -1,7 +1,7 @@
 fetch like api's and other possible useful things.
 
 notes: 
-
+full log in /api_requests/.har (sanitized, no personal data )
 leerling_id = found in localstorage
 
 base = apps4lab.be (always in front of /api)
