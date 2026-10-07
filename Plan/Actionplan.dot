@@ -1,0 +1,22 @@
+digraph{
+    subgraph cluster_mal{
+        label = "main application loop"
+
+        "getting data from" -> {"projects.apps4lab.be", "portaal.apps4lab.be"}
+        
+        -> "interface" 
+        {"intrests" "hobbies" "free time" "..."} -> "customization" -> "interface"
+
+        -> "make planner"
+        -> "export to pdf"
+    }
+
+    subgraph cluster_todo{
+        label="application todo"
+
+        "getting data" -> "storing in json"
+        -> "reading from json" -> "read in app"
+        "add customization" -> "save to json" -> "read in app"
+        "read in app" -> "algoritm" -> "export to pdf/png"
+    }
+}
