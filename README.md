@@ -1,7 +1,7 @@
 # Automatic-LAB-planner
 Automatic planner for LAB students.
 
-![PLAN](http://github.com/BjarnePauwels/Automatic-LAB-planner/blob/main/Plan/PLAN.png)
+![PLAN](./Plan/PLAN.png)
 
 ## TODO
 
