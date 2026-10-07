@@ -2,6 +2,9 @@
 #include <glad/glad.h>
 #include <glfw3.h>
 
+#include <imgui.h>
+#include <imgui/backends/imgui_impl_glfw.h>
+
 void error_callback(int error, const char* description);
 
 int main(int, char**){
@@ -14,10 +17,13 @@ int main(int, char**){
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     GLFWwindow* window = glfwCreateWindow(640, 480, "My title", NULL, NULL); 
+    GLFWwindow* pref = glfwCreateWindow(100, 200, "Preferences", NULL, NULL);
     if(!window){
         error_callback(2, "window creation failed");
     }
     glfwMakeContextCurrent(window);
+
+        
 
     while (!glfwWindowShouldClose(window))
     {
@@ -25,7 +31,12 @@ int main(int, char**){
         glfwGetFramebufferSize(window, &width, &height);
         const float ratio = width / (float) height;
         
+
+
         
+
+
+
 
         glfwSwapBuffers(window);
         glfwPollEvents();

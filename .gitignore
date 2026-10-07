@@ -70,3 +70,6 @@ Testing/
 #custom
 ./build
 ./.DS_Store
+Include/.DS_Store
+
+.DS_Store

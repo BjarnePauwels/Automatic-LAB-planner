@@ -11,6 +11,8 @@ add_subdirectory(Library/glfw-3.5.1)
 
 include_directories(Include/
         Include/imgui/headers/
+        Include/imgui/
+        Include/imgui/backends/
         Include/GLFW/
         )
 
@@ -20,6 +22,9 @@ add_executable(Automatic-LAB-planner
     Include/imgui/imgui_draw.cpp
     Include/imgui/imgui_tables.cpp
     Include/imgui/imgui_widgets.cpp
+
+    Include/imgui/backends/imgui_impl_glfw.cpp
+
     main.cpp)
 
 target_link_libraries(Automatic-LAB-planner glfw)
